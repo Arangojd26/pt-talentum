@@ -3,6 +3,7 @@ import "./variableWeather.scss";
 import iconTemp from "../../../assets/icons/temp.png";
 import iconHum from "../../../assets/icons/humidity.png";
 import iconWind from "../../../assets/icons/wind.png";
+import { TEMP, HUMIDITY, WIND } from "../../consts";
 
 export const VariableWeather = ({ title }) => {
   const renderVariable = () => {
@@ -12,19 +13,19 @@ export const VariableWeather = ({ title }) => {
     let value;
 
     switch (title) {
-      case "temp":
+      case TEMP:
         classname = "o-row";
         icon = iconTemp;
         alt = "temp";
         value = 31;
         break;
-      case "humidity":
+      case HUMIDITY:
         classname = "o-row";
         icon = iconHum;
         alt = "humidity";
         value = 80 + "%";
         break;
-      case "wind":
+      case WIND:
         classname = "o-row o-last";
         icon = iconWind;
         alt = "wind";
