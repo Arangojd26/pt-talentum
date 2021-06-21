@@ -5,7 +5,7 @@ import iconHum from "../../../assets/icons/humidity.png";
 import iconWind from "../../../assets/icons/wind.png";
 import { TEMP, HUMIDITY, WIND } from "../../consts";
 
-export const VariableWeather = ({ title }) => {
+const VariableWeather = ({ title, result }) => {
   const renderVariable = () => {
     let classname;
     let icon;
@@ -17,19 +17,19 @@ export const VariableWeather = ({ title }) => {
         classname = "o-row";
         icon = iconTemp;
         alt = "temp";
-        value = 31;
+        value = result;
         break;
       case HUMIDITY:
         classname = "o-row";
         icon = iconHum;
         alt = "humidity";
-        value = 80 + "%";
+        value = result + "%";
         break;
       case WIND:
         classname = "o-row o-last";
         icon = iconWind;
         alt = "wind";
-        value = 1.0 + " m/s";
+        value = result + " m/s";
         break;
 
       default:
@@ -47,3 +47,5 @@ export const VariableWeather = ({ title }) => {
 
   return renderVariable();
 };
+
+export default VariableWeather;

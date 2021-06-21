@@ -28,6 +28,7 @@
       h2 {
         margin-top: 1.5rem;
         margin-bottom: 0.2rem;
+        text-transform: uppercase;
       }
       p {
         margin: 0;
@@ -53,7 +54,7 @@
         margin-top: auto;
         margin-right: auto;
 
-        :last-child{
+        :last-child {
           margin-left: 0.4rem;
         }
       }

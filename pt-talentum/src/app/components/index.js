@@ -1,2 +1,2 @@
-export { CardWeather } from "./CardWeather/CardWeather";
-export { VariableWeather } from "./VariableWeather/VariableWeather";
+export { default as CardWeather } from "./CardWeather/CardWeather";
+export { default as VariableWeather } from "./VariableWeather/VariableWeather";
