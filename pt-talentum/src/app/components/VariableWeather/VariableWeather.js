@@ -7,20 +7,18 @@ import { TEMP, HUMIDITY, WIND } from "../../consts";
 
 const VariableWeather = ({ title, result }) => {
   const renderVariable = () => {
-    let classname;
+    let classname = "o-row";
     let icon;
     let alt;
     let value;
 
     switch (title) {
       case TEMP:
-        classname = "o-row";
         icon = iconTemp;
         alt = "temp";
         value = result;
         break;
       case HUMIDITY:
-        classname = "o-row";
         icon = iconHum;
         alt = "humidity";
         value = result + "%";

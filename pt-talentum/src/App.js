@@ -1,4 +1,4 @@
-import "./App.css";
+import "./configStyles.scss";
 import Weather from "./app/views/Weather.view";
 
 function App() {
